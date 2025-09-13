@@ -6,6 +6,7 @@ const { config } = require('./src/config');
 const debug = require('debug')('app:server');
 const { taskAPIRoutes } = require('./src/Tasks');
 const { userAPIRoutes } = require('./src/users');
+const cors = require('cors');
 
 // Connect to MongoDB
 mongoose.connect(config.dbUri)
@@ -19,6 +20,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }))
+app.use(cors());
 
 taskAPIRoutes(app);
 userAPIRoutes(app);
