@@ -12,20 +12,6 @@ Backend API para la aplicación To-Do List. Construido con Express y MongoDB (Mo
 - Node.js (recomendado v18+)
 - MongoDB (cadena de conexión a Mongo Atlas o instancia local)
 
-## Instalación
-
-1. Sitúate en la carpeta del backend:
-
-```powershell
-cd c:\Users\rjstu\Documents\Proyects\TODOLIST\backend
-```
-
-2. Instala dependencias:
-
-```powershell
-npm install
-```
-
 ## Variables de entorno
 
 Crea un archivo `.env` en la carpeta `backend/` con las siguientes variables. No incluyas secretos en repositorios públicos.
